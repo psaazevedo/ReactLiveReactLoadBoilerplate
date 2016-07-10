@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch index.html with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceRoot}/index.html",
+            "sourceMaps": false,
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Launch localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8080",
+            "sourceMaps": false,
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "attach to chrome",
+            "type": "chrome",
+            "port": 9222,
+            "request": "attach",
+            "sourceMaps": false,
+            "diagnosticLogging": true,
+            "webRoot": "${workspaceRoot}/app/",
+            "url": "http://localhost:8080"
+        }
+    ]
+}
+
